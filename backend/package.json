@@ -1,0 +1,44 @@
+{
+  "name": "budgz-backend",
+  "version": "1.0.0",
+  "description": "BudgZ Personal Finance Tracker & Budgeting API Server",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "node --max-old-space-size=2048 --import tsx src/routes/__tests__/run_auth_tests.ts"
+  },
+  "keywords": [
+    "finance",
+    "budget",
+    "tracker",
+    "api",
+    "express",
+    "mongodb"
+  ],
+  "author": "BudgZ Team",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^17.3.1",
+    "express": "^4.21.2",
+    "google-auth-library": "^11.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.5",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/jsonwebtoken": "^9.0.8",
+    "@types/node": "^22.13.1",
+    "@types/supertest": "^6.0.2",
+    "supertest": "^7.0.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.5"
+  }
+}
